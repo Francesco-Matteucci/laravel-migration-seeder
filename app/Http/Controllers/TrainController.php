@@ -9,8 +9,7 @@ class TrainController extends Controller
 {
     public function index()
     {
-        $today = now()->toDateString();
-        $trains = Train::where('orario_partenza', '>=', $today)->get();
+        $trains = Train::all();
 
         return view('trains.index', compact('trains'));
     }

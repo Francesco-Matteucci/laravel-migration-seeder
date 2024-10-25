@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Treni in partenza oggi')
+
 @section('content')
     <div class="container my-5">
         <h1 class="text-center mb-4">Treni in partenza oggi</h1>
